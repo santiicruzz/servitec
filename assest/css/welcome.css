@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: white;
+}
+.fondo_bienvenida {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -200;
+  filter: brightness(0.4);
+}
+.bienvenida {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.img {
+  position: relative;
+  width: 40%;
+  margin-top: -2%;
+  margin-bottom: -11%;
+  z-index: -100;
+}
+.sub_bienvenida {
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-decoration: underline;
+  margin-top: -65px;
+  margin-bottom: 5%;
+}
+.btn-bienvenida {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  margin: 2%;
+  padding: 1%;
+  color: white;
+  border: solid 1px white;
+  border-radius: 9px;
+  transition: all 0.7s;
+}
+.btn-bienvenida:hover {
+  background: #f74d4d;
+}

@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.cabecera {
+  background-color: rgba(255, 255, 255, 0.685);
+}
+.punto_cabecera {
+  width: 9%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+.titulo_cabecera {
+  font-size: 30px;
+}
+.titulo_registro {
+  margin-top: -2%;
+}
+.div_sombra {
+  width: 100%;
+  min-height: 100%;
+  height: auto !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.452);
+  padding: 15px;
+  -webkit-box-shadow: 0px 0px 93px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 93px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 93px 5px rgba(0, 0, 0, 0.75);
+}
+.div_alerta {
+  width: 20%;
+  background: white;
+  margin: 15%;
+  text-align: center;
+  padding: 3%;
+  border-radius: 5px;
+}
+.aceptar {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  border-radius: 5px;
+  background: #f74d4d;
+  padding: 7px;
+  margin-bottom: 5%;
+  transition: all 0.6s;
+}
+.aceptar:hover {
+  background: rgb(255, 54, 54);
+}
+.contenedor {
+  width: 100%;
+  height: 530px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div-registro {
+  width: 90%;
+}
+.text,
+input[type="date"],
+input[type="password"] {
+  padding: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  width: 233px;
+  font-size: 18px;
+  background: transparent;
+  border: solid 1px gray;
+  font-family: "Montserrat", sans-serif;
+}
+.texto_iniciar_sesion {
+  font-size: 15px;
+  margin-bottom: -4%;
+}
+.enlace_iniciar_sesion {
+  text-decoration: none;
+  font-size: 16px;
+}
+.enlace_iniciar_sesion:hover {
+  text-decoration: underline;
+}
+input[type="submit"] {
+  width: 545px;
+  border: none;
+  padding: 10px;
+  font-size: 21px;
+  border-radius: 3px;
+  color: white;
+  background: #f74d4d;
+  margin-top: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+input[type="submit"]:hover {
+  transition: all 0.6s;
+  background: rgb(255, 54, 54);
+}
+.volver_index {
+  color: rgb(58, 58, 58);
+  font-size: 17px;
+  text-decoration: none;
+}
+.volver_index:hover {
+  text-decoration: underline;
+}

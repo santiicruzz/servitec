@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+  font-family: "Montserrat", sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(255, 9, 9, 0.78);
+  border-radius: 5px;
+}
+body:-webkit-scrollbar-thumb:hover {
+  background: #f74d4d;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.cabecera {
+  background-color: rgba(255, 255, 255, 0.685);
+  z-index: 1000;
+}
+.punto_cabecera {
+  width: 9%;
+  margin-top: 1.8%;
+  margin-bottom: 1.5%;
+}
+.cont_usuario {
+  text-align: center;
+  position: absolute;
+  width: 30%;
+  margin-left: 75%;
+  margin-top: -4%;
+  display: flex;
+}
+.menu-usuario {
+  display: inline-block;
+  list-style: none;
+  width: 55%;
+  margin: -8%;
+}
+.menu-usuario1 {
+  display: inline-block;
+  list-style: none;
+  width: 50%;
+  margin: -8%;
+}
+.nombre {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  margin-top: 12%;
+}
+.div_perfil {
+  text-align: center;
+  margin-top: 10%;
+  width: 22%;
+  margin-left: 40%;
+}
+.pre_entorno_perfil {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.pre_entorno_perfil:active {
+  width: 50px;
+  height: 50px;
+}
+.pre_entorno_perfil img {
+  width: 100%;
+  height: auto;
+}
+@supports (object-fit: cover) {
+  .pre_entorno_perfil img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+.flecha {
+  color: #f74d4d;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: -1%;
+  transform: translateX(-3%);
+  cursor: pointer;
+}
+.opciones_perfil {
+  position: absolute;
+  top: 13.4%;
+  left: 100%;
+  width: 20%;
+  transition: all 0.7s;
+  border-left: rgb(148, 148, 148) solid 1px;
+  border-bottom: rgb(148, 148, 148) solid 1px;
+}
+.mostrar {
+  left: 80%;
+}
+.ocultar {
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  transition: all 0.6s;
+}
+.menu {
+  background: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu_link {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 13px;
+  transition: all 0.4s;
+}
+.menu_link:hover {
+  background: #f74d4d;
+  color: white;
+}
+#ref {
+  background: #f74d4d;
+  color: white;
+}
+.estados {
+  padding: 10px;
+  border: 1px solid gainsboro;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-border-radius: 10px 0 0 10px;
+  border-radius: 10px 0 0 10px;
+  cursor: pointer;
+}
+.buscar {
+  background: #ff7979;
+  color: white;
+  letter-spacing: 1px;
+  border: none;
+  padding: 11.9px;
+  font-size: 16px;
+  -webkit-border-radius: 0px 10px 10px 0px;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+  margin-bottom: 3%;
+  transition: all 0.3s;
+}
+.buscar:hover {
+  background: rgb(255, 47, 47);
+  color: white;
+}
+.alerta {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 40%;
+  color: rgb(194, 194, 194);
+}
+.lista_solicitudes {
+  text-align: center;
+  width: 70%;
+}
+.eliminar {
+  background: rgb(255, 108, 82);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+.eliminar:hover {
+  background: rgb(251, 33, 33);
+}
+.editar {
+  background: rgb(67, 189, 67);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+.editar:hover {
+  background: rgb(0, 173, 0);
+}
+/*<-----------------------------editar_datos.php------------------------------>*/
+.datos_tabla {
+  width: 50%;
+  margin-bottom: 20px;
+  margin-left: 20%;
+}
+.estado {
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 7px;
+  cursor: pointer;
+}
+.espacio_desc {
+  width: 38%;
+  margin-left: 35%;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 7px;
+}
+.guardar {
+  background: #ff7979;
+  color: white;
+  border: none;
+  margin-top: 1%;
+  margin-left: 3.5%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.guardar:hover {
+  background: #f74d4d;
+}
+.volver_perfil {
+  text-align: center;
+  position: absolute;
+  margin: 3%;
+  left: 46%;
+  top: 113%;
+  color: rgb(105, 105, 105);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.volver_perfil:hover {
+  color: #f74d4d;
+  text-decoration: underline;
+}
+/*--------------------------------------Tecnico.php--------------------------------------*/
+.sol_agenda {
+  width: 50%;
+  text-align: center;
+  margin-top: 3%;
+}
+.realizar {
+  text-decoration: none;
+  background: rgb(2, 185, 2);
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+}
+.realizar:hover {
+  background: rgb(0, 214, 0);
+}
+.ver {
+  text-decoration: none;
+  background: rgb(31, 123, 184);
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+}
+.ver:hover {
+  background: rgb(33, 152, 231);
+}
+/*----------------------------------------------usuarios----------------------------------------------*/
+
+.pre_entorno_user {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  margin: auto;
+}
+
+.pre_entorno_user:active {
+  width: 50px;
+  height: 50px;
+}
+.pre_entorno_user img {
+  width: 100%;
+  height: auto;
+}
+@supports (object-fit: cover) {
+  .pre_entorno_user img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+.add {
+  position: absolute;
+  text-decoration: none;
+  left: 60%;
+  top:18.4%;
+}
+.add p {
+  position: relative;
+  color: #e5e5e5;
+  font-weight: bold;
+  left: 100%;
+  transform: translateY(240%);
+  left: 81%;
+}
+.material-icons {
+  color: chartreuse;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.material-icons:hover{
+  background: rgb(0, 206, 0);
+  color: #ffffff;
+  padding-right: 150%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.lista_solicitudes{
+  margin-bottom: 5%;
+}
